@@ -51,7 +51,7 @@ export function draggable(
           dx: this.state.pan.x,
           dy: this.state.pan.y
         }
-      ]);
+      ], { useNativeDriver: true });
 
       this.panResponder = PanResponder.create({
         onStartShouldSetPanResponder: () => true,
